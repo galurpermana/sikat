@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @extends('layout.main')
 
 @section('kp')
