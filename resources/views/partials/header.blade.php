@@ -1,10 +1,10 @@
 <header>
     <div class="fixed z-50 top-0 left-0 right-0">
         <div class="flex justify-between bg-white p-2 xl:mx-2">
-            <div>
+            <div class="p-2">
                 <img class="justify-start h-10 w-40 md:h-14 md:w-56" src="img/logo.png" alt="">
             </div>
-            <div class="">
+            <div class="py-1 md:py-2">
                 <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
                     class=" text-black focus:ring-4 focus:outline-none focus:ring-slate-200 font-medium rounded-lg text-md md:text-xl px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                     type="button"><img src="img/profile.png" class="size-8 xl:size-8 mr-2" alt="">10221090<svg
@@ -40,10 +40,11 @@
         </div>
         <div class="flex p-4 bg-hmsi">
             <a href="#">
-                <img src="img/home.svg" class="size-6" alt="">
+                <i data-feather="home" class="text-white size-6"></i>
             </a>
-            <img src="img/chevron-right.svg" class="mx-2" alt="">
+            <i data-feather="chevron-right" class="mx-2 text-white"></i>
             <p class="text-white font-bold">Kerja Praktik</p>
         </div>
     </div>
 </header>
+

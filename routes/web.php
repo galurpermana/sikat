@@ -17,11 +17,34 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
-
-Route::get('menu', function () {
-    return view('menu');
+Route::get('/daftar', function () {
+    return view('kp\daftar');
 });
 
-Route::get('/header', function () {
-    return view('layout.header');
+Route::get('/riwayat', function () {
+    return view('kp\riwayat ');
+});
+
+Route::get('/konfirmasi', function () {
+    return view('kp\konfirmasi ');
+});
+
+Route::get('/berkas', function () {
+    return view('kp\berkas ');
+});
+
+Route::get('/laporan', function () {
+    return view('kp\laporan ');
+});
+
+Route::get('/pembimbing', function () {
+    return view('kp\pembimbing');
+});
+
+Route::get('/seminar', function () {
+    return view('kp\seminar');
+});
+
+Route::get('/pengesahan', function () {
+    return view('kp\pengesahan');
 });

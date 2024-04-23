@@ -13,24 +13,26 @@
     @include('partials.header')
     <div>
         @include('partials.sidebar')
-        @yield('daftar')
-        @yield('riwayat')
+        @yield('kp')
     </div>
 
     <style>
-        /* CSS untuk menghilangkan arrow pada input number */
-        /* Untuk Chrome, Safari, dan Opera */
         input[type=number]::-webkit-inner-spin-button,
         input[type=number]::-webkit-outer-spin-button {
             -webkit-appearance: none;
             margin: 0;
         }
 
-        /* Untuk Firefox */
         input[type=number] {
             -moz-appearance: textfield;
         }
     </style>
+    <!-- choose one -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        feather.replace(); // Mengaktifkan Feather Icons
+    </script>
 
 </body>
 

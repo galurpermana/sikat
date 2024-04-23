@@ -1,7 +1,7 @@
 @extends('layout.main')
 
-@section('daftar')
-    <div class="p-4 sm:ml-64 mt-32">
+@section('kp')
+    <div class="p-4 md:ml-64 mt-32">
         <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700">
             <div class=" bg-white">
                 <div class="p-4 h-screen rounded bg-white dark:bg-gray-800">
@@ -38,7 +38,7 @@
                         <input type="text" id=""
                             class="block w-full p-2 bg-gray-200 border-none rounded-lg text-xs mb-2">
                         <div class="flex justify-center">
-                            <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mt-4 mb-2">Submit</button>
+                            <button type="button" class="text-white bg-hmsi hover:scale-105 transition font-medium rounded-lg text-sm px-5 py-2.5 me-2 mt-4 mb-2">Submit</button>
                         </div>
 
                     </form>

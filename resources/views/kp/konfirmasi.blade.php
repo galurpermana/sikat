@@ -5,7 +5,7 @@
         <div class="p-4 md:ml-64 mt-32">
             <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700">
                 <div class=" bg-white">
-                    <div class="p-4 h-layar rounded bg-white dark:bg-gray-800">
+                    <div class="p-4 h-screen rounded bg-white dark:bg-gray-800">
                         <div class="flex justify-between py-1">
                             <div>
                                 <form class="w-32 md:w-48">
@@ -14,7 +14,7 @@
                                     <div class="relative">
                                         <div
                                             class="absolute inset-y-0 start-0 flex items-center p-2 pointer-events-auto bg-hmsi border border-gray-300 rounded-lg">
-                                            <a href="" type="submit" class="">
+                                            <a href="" class="">
                                                 <img src="img/search.svg" class="size-4" alt="">
                                             </a>
                                         </div>
@@ -24,12 +24,6 @@
 
                                     </div>
                                 </form>
-                            </div>
-                            <div class="">
-                                <a href="/daftar">
-                                    <button class="inline-flex bg-hmsi h p-2 pr-3 text-white text-sm rounded-md"><i
-                                            data-feather="plus-circle" class="size-5 mr-1"></i> Daftar KP</button>
-                                </a>
                             </div>
                         </div>
                         <div class="mt-4 relative overflow-x-auto">
@@ -46,20 +40,17 @@
                                             Tanggal Daftar
                                         </th>
                                         <th scope="col" class="p-4 border border-gray-400 ">
-                                            Status
-                                        </th>
-                                        <th scope="col" class="p-4 border border-gray-400 ">
-                                            Aksi
+                                            Konfirmasi Pendaftaran
                                         </th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <th colspan="5"  class="p-2 border font-light border-gray-400">
-                                           Anda belum mendaftar KP
+                                        <th scope="row" colspan="4" class="p-2 border font-light border-gray-400">
+                                            Anda belum mendaftar KP
                                         </th>
                                     </tr>
-                                    <tr class="bg-white  border-b text-xs lg:text-sm">
+                                    <tr class="bg-white border-b">
                                         <th scope="row" class="p-2 border font-light border-gray-400">
                                             1
                                         </th>
@@ -69,18 +60,46 @@
                                         <th scope="row" class="p-2 border font-light border-gray-400 ">
                                             8 Maret 2024
                                         </th>
-                                        <th scope="row" class="p-2 border font-light border-gray-400">
-                                            Menunggu Diverifikasi
+                                        <th scope="row" class="p-2 pt-3 border font-light border-gray-400 lg:w-72">
+                                            <a href=""
+                                                class="text-white px-4 py-1 rounded-sm bg-green-400 hover:bg-green-500 lg:mr-2">
+                                                <button class= "mb-4 lg:mb-0 min-w-20"><i data-feather="check-circle"
+                                                        class="inline size-4 mb-1"></i>
+                                                    Diterima</button>
+                                            </a>
+                                            <a href=""
+                                                class="text-white px-4 py-1 w-10 rounded-sm bg-red-600 hover:bg-red-700 lg:ml-2 ">
+                                                <button class= "min-w-20 ml"><i data-feather="x-circle"
+                                                        class="inline size-4 mb-1 mr-1"></i>Ditolak</button>
+                                            </a>
                                         </th>
-                                        <th scope="row" class="p-2 border font-light border-gray-400 whitespace-nowrap">
-                                            <div class="lg:flex lg:justify-around">
-                                                <a href=""><i data-feather="eye"
-                                                        class="my-2 mx-auto fill-hmsi text-white"></i></a>
-                                                <a href=""><i data-feather="edit"
-                                                        class="my-2 mx-auto fill-hmsi text-white"></i></a>
-                                                <a href=""><i data-feather="trash-2"
-                                                        class="my-2 mx-auto fill-hmsi text-white"></i></a>
-                                            </div>
+                                    </tr>
+                                    <tr class="bg-green-100 border-b">
+                                        <th scope="row" class="p-2 border font-light border-gray-400">
+                                            1
+                                        </th>
+                                        <th scope="row" class="p-2 border font-light border-gray-400">
+                                            Mitra Kukar
+                                        </th>
+                                        <th scope="row" class="p-2 border font-light border-gray-400 ">
+                                            8 Maret 2024
+                                        </th>
+                                        <th scope="row" class="p-2 border font-light border-gray-400 ">
+                                            Diterima
+                                        </th>
+                                    </tr>
+                                    <tr class="bg-red-100 border-b">
+                                        <th scope="row" class="p-2 border font-light border-gray-400">
+                                            1
+                                        </th>
+                                        <th scope="row" class="p-2 border font-light border-gray-400">
+                                            Mitra Kukar
+                                        </th>
+                                        <th scope="row" class="p-2 border font-light border-gray-400 ">
+                                            8 Maret 2024
+                                        </th>
+                                        <th scope="row" class="p-2 border font-light border-gray-400 ">
+                                            Ditolak
                                         </th>
                                     </tr>
                                 </tbody>
