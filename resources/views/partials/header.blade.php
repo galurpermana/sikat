@@ -1,6 +1,6 @@
 <header>
     <div class="fixed z-50 top-0 left-0 right-0">
-        <div class="flex justify-between bg-white p-2 xl:mx-2">
+        <div class="flex justify-between bg-white p-2   ">
             <div class="p-2">
                 <img class="justify-start h-10 w-40 md:h-14 md:w-56" src="img/logo.png" alt="">
             </div>
@@ -31,15 +31,18 @@
                                 Email</a>
                         </li>
                         <li>
-                            <a href="#"
-                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white border-t-2 border-slate-400">Logout</a>
+                            <form action="{{ route('logout') }}" method="POST">
+                                @csrf
+                                <button
+                                    class="block w-full text-left px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white border-t-2 border-slate-400">Logout</button>
+                            </form>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="flex p-4 bg-hmsi">
-            <a href="#">
+            <a href="/menu">
                 <i data-feather="home" class="text-white size-6"></i>
             </a>
             <i data-feather="chevron-right" class="mx-2 text-white"></i>
@@ -47,4 +50,3 @@
         </div>
     </div>
 </header>
-
