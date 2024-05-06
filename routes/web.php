@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\PdfController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,6 +28,9 @@ Route::get('/menu', function () {
 Route::get('/daftar', function () {
     return view('kp\daftar');
 });
+
+Route::get('/generate-pdf', [Pdfcontroller::class, 'generatePdf'])->name('generate-pdf');
+
 
 Route::get('/riwayat', function () {
     return view('kp\riwayat ');
