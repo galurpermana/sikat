@@ -2,7 +2,10 @@
 
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PdfController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +17,11 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::middleware('auth')->group(function () {
+    Route::get('users', [UserController::class, 'index'])->name('users.index'); {
+    Route::get('users/{id}/show', [UserController::class, 'show'])->name('users.show');
+    };
+});
 
 Route::get('/', [LoginController::class, 'index']);
 
@@ -29,7 +37,7 @@ Route::get('/daftar', function () {
     return view('kp\daftar');
 });
 
-Route::get('/generate-pdf', [Pdfcontroller::class, 'generatePdf'])->name('generate-pdf');
+// Route::get('/generate-pdf', [Pdfcontroller::class, 'generatePdf'])->name('generate-pdf');
 
 
 Route::get('/riwayat', function () {
