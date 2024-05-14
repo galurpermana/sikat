@@ -18,6 +18,13 @@
             </li>
             <li class="text-center">Menu</li>
             <li>
+                <a href="{{route ('users.show', Auth::user()->id)}}"
+                    class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 group">
+                    <i data-feather="file-plus" class="text-hmsi"></i>
+                    <span class="ms-3">Data Diri</span>
+                </a>
+            </li>
+            <li>
                 <a href="/riwayat"
                     class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 group">
                     <i data-feather="file-plus" class="text-hmsi"></i>
